@@ -18,7 +18,9 @@ describe('Test form', () => {
     });
     // test code here (next page)
     describe('Test form', () => {
-        test('should add .valid class for valid inn', async() => {
+
+        test('test form', async() => {
+            console.log(page)
             await page.goto('http://localhost:9000/');
             const form = await page.$('[data-widgets=credit-card-validator]');
             const input = await form.$('[data-name=input-number]');
